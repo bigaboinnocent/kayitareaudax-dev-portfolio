@@ -1,4 +1,6 @@
 
+
+// do crud operations on the components
 const router = require("express").Router();
 const {
   Intro,
@@ -64,7 +66,7 @@ router.post("/update-about", async (req, res) => {
     res.status(200).send({
       data: about,
       success: true,
-      message: "Abouts updated successfully",
+      message: "About me updated successfully",
     });
   } catch (error) {
     res.status(500).send(error);

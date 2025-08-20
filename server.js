@@ -4,7 +4,7 @@ const app = express();
 require("dotenv").config();
 const dbConfig = require("./config/dbConfig");
 
-const portfolioRoute = require("./routes/portfolioRoute");
+const portfolioRoute = require("./routes/portifolioRoutes.js");
 
 app.use(express.json());
 
