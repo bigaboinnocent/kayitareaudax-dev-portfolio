@@ -10,10 +10,6 @@ app.use(express.json());
 
 app.use("/api/portfolio", portfolioRoute);
 
-app.get("/", (req, res) => {
-  res.send("API is running...");  
-});
-
 const port = process.env.PORT || 5000;
 const path = require("path");
 
